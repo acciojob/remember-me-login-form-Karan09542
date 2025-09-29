@@ -15,9 +15,9 @@ window.onload = function(){
 	if(userCredential){
 		existing.hidden = false;
 		checkboxInput.checked = true;
+		alert
 	}
 }
-
 function onSubmit(e){
 	// e.preventDefault();
 	const username = usernameInput.value;
@@ -25,6 +25,9 @@ function onSubmit(e){
 	const isRemember = checkboxInput.checked;
 
 	const credential = {username, password, isRemember}
+
+	alert(`Logged in as ${username}`);
+
 
 	if(!isRemember){
 		localStorage.removeItem("userCredential")
