@@ -14,6 +14,7 @@ window.onload = function(){
 	const userCredential = localStorage.getItem("userCredential");
 	if(userCredential){
 		existing.hidden = false;
+		checkboxInput.checked = true;
 	}
 }
 
